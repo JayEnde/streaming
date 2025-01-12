@@ -1,0 +1,109 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+@import url('https://fonts.googleapis.com/css?family={{fontMessage}}');
+
+* {
+    overflow: visible;
+    text-shadow:{textShadow};
+  	text-align: left;
+  	scroll-behavior: smooth;
+}
+
+.main-container{
+    display:flex;
+    height:98%;
+    flex-direction: column;
+    justify-content: {{alignMessages}};
+  	text-align: left;
+  	padding-left: {{paddingMain}}px;
+  	padding-right: {{paddingMain}}px;
+    background: linear-gradient(180deg, {{colorBackgroundStart}} 0%, {{colorBackgroundMid}} {{backgroundTransitionIn}}%, {{colorBackgroundMid}} {{backgroundTransitionOut}}%, {{colorBackgroundStart}} 100%);
+  	gap: {{gapMain}}px; /* Optional: Add spacing between .user-box and .user-message */
+
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+    mask-image: linear-gradient(to top, rgba(0, 0, 0, 1) 90%, rgba(0, 0, 0, 0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+
+/*Username box and content*/
+.user-box{
+  	position: relative;
+	border-radius: {{borderRadiusNamebox}}px;
+    color: {{fontColorName}};
+  	background-color: {{backgroundColorName}};
+  	z-index: 99;
+  	top: 2%;
+  	padding-top: {{paddingHeightNamebox}}px;
+    padding-bottom: {{paddingHeightNamebox}}px;
+    padding-left: {{paddingWidthNamebox}}px;
+    padding-right: {{paddingWidthNamebox}}px;
+    margin-left: {{horizontalNamebox}}%;
+  	text-align: left;
+  	width: auto;
+    display: inline-flex;
+    align-items: center; /* Vertically center content */
+    gap: 5px; /* Optional: Adjust spacing between badges and username */
+  	margin-bottom: {{verticalNamebox}}px;
+	/*box-shadow: 0px 0px 1px 2px red;*/
+  	outline: solid {{fontColorMessage}};
+}
+.user-box > span{
+    font-size:{{fontSizeName}}px;
+    font-family: '{{fontName}}', sans-serif;
+    font-weight: {{fontWeightName}};
+  	text-align: left;
+  	vertical-align: middle; /* Keeps text alignment consistent */
+    flex-shrink: 0; /* Ensures badges don't resize unexpectedly */
+  	text-shadow: {{offsetXShadowName}}px {{offsetYShadowName}}px {{blurShadowName}}px {{colorShadowName}};
+}
+/* Message box and content */
+.message-row {
+    position: relative;
+    flex: 0 0 auto;
+    /*width: 100%;*/
+    height: auto;
+    display: flex; /* Enable flexbox for child alignment */
+    flex-direction: column; /* Ensure children stack vertically */
+    align-items: flex-start; /* Align children to the left */
+
+    border-radius: 5px;
+    text-align: left;
+}
+.user-message{
+	font-family: '{{fontMessage}}', sans-serif;
+    display:inline-block;
+ 	font-size:{{fontSizeMessage}}px;
+    font-weight: {{fontWeightMessage}};
+    color: {{fontColorMessage}};
+    background-color:{{backgroundColorMessage}};
+    height: auto;
+    position: relative;
+    word-wrap: break-word;
+    padding-top: {{paddingHeightMessagebox}}px;
+    padding-bottom: {{paddingHeightMessagebox}}px;
+    padding-left: {{paddingWidthMessagebox}}px;
+    padding-right: {{paddingWidthMessagebox}}px;
+  	margin-left: {{horizontalMessagebox}}%;
+  	border-radius: {{borderRadiusMessagebox}}px;
+  	text-shadow: {{offsetXShadowMessage}}px {{offsetYShadowMessage}}px {{blurShadowMessage}}px {{colorShadowMessage}};
+}
+
+.badge{
+    display: {{hideBadges}};
+    height: {{fontSizeName}}px;
+    line-height: {{fontSizeName}}px;
+    vertical-align: middle; /* Keeps text alignment consistent */
+    flex-shrink: 0; /* Ensures badges don't resize unexpectedly */
+}
+.emote{
+    height: {{emoteSize}}px;
+    vertical-align: middle;
+    background-repeat:no-repeat;
+}
+.action{
+    font-style: italic;
+}
