@@ -1,0 +1,425 @@
+{
+  "testMessage": {
+    "type": "button",
+    "label": "Emulate message",
+    "value": "Emulate message",
+    "group": "Emulate"
+  },        
+  "pirateChat": {
+    "type": "text",
+    "label": "Pirate chat from...",
+    "value": "",
+    "group": "Emulate"
+  },
+  "fontName": {
+    "type": "text",
+    "label": "Font name",
+    "value": "Montserrat",
+    "group": "Typography Name"
+  },
+  "fontSizeName": {
+    "type": "slider",
+    "max": 50,
+    "min": 10,
+    "step": 5,
+    "label": "Font size",
+    "value": 15,
+    "group": "Typography Name"
+  },
+  "fontWeightName": {
+    "label": "Font Weight",
+    "type": "dropdown",
+    "value": "400",
+    "options": {
+      "100": "Thin (100)",
+      "300": "Light (300)",
+      "400": "Regular (400)",
+      "500": "Medium (500)",
+      "700": "Bold (700)",
+      "900": "Black (900)"
+    },
+    "group": "Typography Name"
+  },
+  "fontMessage": {
+    "type": "text",
+    "label": "Font name",
+    "value": "Montserrat",
+    "group": "Typography Message"
+  },
+  "fontSizeMessage": {
+    "type": "slider",
+    "max": 50,
+    "min": 10,
+    "step": 5,
+    "label": "Font size",
+    "value": 15,
+    "group": "Typography Message"
+  },
+  "fontWeightMessage": {
+    "label": "Font Weight message",
+    "type": "dropdown",
+    "value": "400",
+    "options": {
+      "100": "Thin (100)",
+      "300": "Light (300)",
+      "400": "Regular (400)",
+      "500": "Medium (500)",
+      "700": "Bold (700)",
+      "900": "Black (900)"
+    },
+    "group": "Typography Message"
+  },
+  "colorShadowName": {
+    "type": "colorpicker",
+    "label": "Text shadow",
+    "value": "rgba(0,0,0,1)",
+    "group": "Textshadow Name"
+  },
+  "offsetXShadowName": {
+    "type": "number",
+    "label": "X-Offset",
+    "value": 0,
+    "group": "Textshadow Name"
+  },
+  "offsetYShadowName": {
+    "type": "number",
+    "label": "Y-Offset",
+    "value": 0,
+    "group": "Textshadow Name"
+  },
+  "blurShadowName": {
+    "type": "number",
+    "label": "Blur radius",
+    "value": 0,
+    "group": "Textshadow Name"
+  },
+  "colorShadowMessage": {
+    "type": "colorpicker",
+    "label": "Text shadow",
+    "value": "rgba(0,0,0,1)",
+    "group": "Textshadow Message"
+  },
+  "offsetXShadowMessage": {
+    "type": "number",
+    "label": "X-Offset",
+    "value": 0,
+    "group": "Textshadow Message"
+  },
+  "offsetYShadowMessage": {
+    "type": "number",
+    "label": "Y-Offset",
+    "value": 0,
+    "group": "Textshadow Message"
+  },
+  "blurShadowMessage": {
+    "type": "number",
+    "label": "Blur radius",
+    "value": 0,
+    "group": "Textshadow Message"
+  },
+  "fontColorName": {
+    "type": "dropdown",
+    "label": "Font Color",
+    "value": "user",
+    "options": {
+      "user": "as on twitch",
+      "custom": "specified below",
+      "remove": "Remove username"
+    },
+    "group": "Color Namebox"
+  },
+  "fontColorNameCustom": {
+    "type": "colorpicker",
+    "label": "Custom font color:",
+    "value": "rgba(0,255,0,1)",
+    "group": "Color Namebox"
+  },
+  "backgroundColorName": {
+    "type": "colorpicker",
+    "label": "Message Background color",
+    "value": "rgba(0,0,0,0)",
+    "group": "Color Namebox"
+  },
+  "fontColorMessage": {
+    "type": "colorpicker",
+    "label": "Font Color",
+    "value": "rgba(255,255,255,1)",
+    "group": "Color Messagebox"
+  },
+  "backgroundColorMessage": {
+    "type": "colorpicker",
+    "label": "Message Background color",
+    "value": "rgba(0,0,0,0)",
+    "group": "Color Messagebox"
+  },
+  "colorBackgroundStart": {
+    "type": "colorpicker",
+    "label": "Fade in/out Color",
+    "value": "rgba(255, 255, 255, 0.0)",
+    "group": "Color Background"
+  },
+  "colorBackgroundMid": {
+    "type": "colorpicker",
+    "label": "Background Color",
+    "value": "rgba(255, 255, 255, 0.3)",
+    "group": "Color Background"
+  },
+    "backgroundTransitionIn": {
+    "type": "number",
+    "label": "Transition Start %",
+    "value": 5,
+    "group": "Color Background"
+  },
+    "backgroundTransitionOut": {
+    "type": "number",
+    "label": "Transition End %",
+    "value": 95,
+    "group": "Color Background"
+  },
+  "borderRadiusNamebox": {
+    "type": "number",
+    "label": "Radius Namebox",
+    "value": 5,
+    "group": "Styling Namebox"
+  },
+  "paddingHeightNamebox": {
+    "type": "number",
+    "label": "Heightg Namebox",
+    "value": 5,
+    "group": "Styling Namebox"
+  },
+  "paddingWidthNamebox": {
+    "type": "number",
+    "label": "Width Namebox",
+    "value": 5,
+    "group": "Styling Namebox"
+  },
+  "horizontalNamebox": {
+    "label": "Horizontal %-position",
+    "type": "slider",
+    "max": 50,
+    "min": 0,
+    "step": 1,
+    "value": 0,
+    "group": "Styling Namebox"
+  },
+  "verticalNamebox": {
+    "label": "Vertical px-position",
+    "type": "slider",
+    "max": 20,
+    "min": -20,
+    "step": 1,
+    "value": 0,
+    "group": "Styling Namebox"
+  },
+  "borderRadiusMessagebox": {
+    "type": "number",
+    "label": "Radius Namebox",
+    "value": 5,
+    "group": "Styling Messagebox"
+  },
+  "paddingHeightMessagebox": {
+    "type": "number",
+    "label": "Height Namebox",
+    "value": 35,
+    "group": "Styling Messagebox"
+  },
+  "paddingWidthMessagebox": {
+    "type": "number",
+    "label": "Width Namebox",
+    "value": 35,
+    "group": "Styling Messagebox"
+  },
+  "horizontalMessagebox": {
+    "label": "Horizontal %-position",
+    "type": "slider",
+    "max": 50,
+    "min": 0,
+    "step": 1,
+    "value": 0,
+    "group": "Styling Messagebox"
+  },
+  "paddingMain": {
+    "type": "number",
+    "label": "Padding Content px",
+    "value": 5,
+    "group": "Styling Main"
+  },
+  "gapMain": {
+    "type": "number",
+    "label": "Gab between messages [px]",
+    "value": 5,
+    "group": "Styling Main"
+  },
+  "alignMessages": {
+    "label": "Align Messages",
+    "type": "dropdown",
+    "value": "flex-end",
+    "options": {
+      "flex-end": "Bottom -> Top",
+      "flex-start": "Top -> Bottom"
+    },
+    "group": "Message settings"
+  },
+  "animationIn": {
+    "type": "dropdown",
+    "label": "Animation In:",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "bounceIn": "bounceIn",
+      "bounceInDown": "bounceInDown",
+      "bounceInLeft": "bounceInLeft",
+      "bounceInRight": "bounceInRight",
+      "bounceInUp": "bounceInUp",
+      "fadeIn": "fadeIn",
+      "fadeInDown": "fadeInDown",
+      "fadeInDownBig": "fadeInDownBig",
+      "fadeInLeft": "fadeInLeft",
+      "fadeInLeftBig": "fadeInLeftBig",
+      "fadeInRight": "fadeInRight",
+      "fadeInRightBig": "fadeInRightBig",
+      "fadeInUp": "fadeInUp",
+      "fadeInUpBig": "fadeInUpBig",
+      "flipInX": "flipInX",
+      "flipInY": "flipInY",
+      "lightSpeedIn": "lightSpeedIn",
+      "rotateIn": "rotateIn",
+      "rotateInDownLeft": "rotateInDownLeft",
+      "rotateInDownRight": "rotateInDownRight",
+      "rotateInUpLeft": "rotateInUpLeft",
+      "rotateInUpRight": "rotateInUpRight",
+      "slideInUp": "slideInUp",
+      "slideInDown": "slideInDown",
+      "slideInLeft": "slideInLeft",
+      "slideInRight": "slideInRight",
+      "zoomIn": "zoomIn",
+      "zoomInDown": "zoomInDown",
+      "zoomInLeft": "zoomInLeft",
+      "zoomInRight": "zoomInRight",
+      "zoomInUp": "zoomInUp",
+      "jackInTheBox": "jackInTheBox",
+      "rollIn": "rollIn"
+    },
+    "group": "Message settings"
+  },
+  "animationOut": {
+    "type": "dropdown",
+    "label": "Animation Out:",
+    "value": "none",
+    "options": {
+      "none": "None",
+      "bounceOut": "bounceOut",
+      "bounceOutDown": "bounceOutDown",
+      "bounceOutLeft": "bounceOutLeft",
+      "bounceOutRight": "bounceOutRight",
+      "bounceOutUp": "bounceOutUp",
+      "fadeOut": "fadeOut",
+      "fadeOutDown": "fadeOutDown",
+      "fadeOutDownBig": "fadeOutDownBig",
+      "fadeOutLeft": "fadeOutLeft",
+      "fadeOutLeftBig": "fadeOutLeftBig",
+      "fadeOutRight": "fadeOutRight",
+      "fadeOutRightBig": "fadeOutRightBig",
+      "fadeOutUp": "fadeOutUp",
+      "fadeOutUpBig": "fadeOutUpBig",
+      "flipOutX": "flipOutX",
+      "flipOutY": "flipOutY",
+      "lightSpeedOut": "lightSpeedOut",
+      "rotateOut": "rotateOut",
+      "rotateOutDownLeft": "rotateOutDownLeft",
+      "rotateOutDownRight": "rotateOutDownRight",
+      "rotateOutUpLeft": "rotateOutUpLeft",
+      "rotateOutUpRight": "rotateOutUpRight",
+      "slideOutUp": "slideOutUp",
+      "slideOutDown": "slideOutDown",
+      "slideOutLeft": "slideOutLeft",
+      "slideOutRight": "slideOutRight",
+      "zoomOut": "zoomOut",
+      "zoomOutDown": "zoomOutDown",
+      "zoomOutLeft": "zoomOutLeft",
+      "zoomOutRight": "zoomOutRight",
+      "zoomOutUp": "zoomOutUp",
+      "rollOut": "rollOut"
+    },
+    "group": "Message settings"
+  },
+  "maxCount": {
+    "type": "number",
+    "label": "Maximum message count",
+    "value": 4,
+    "group": "Message settings"
+  },
+  "mergeMessages": {
+    "label": "Merge consecutive messages from the same user",
+    "type": "dropdown",
+    "value": "no",
+    "options": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "group": "Message settings"
+  },
+  "hideAfter": {
+    "type": "number",
+    "label": "Hide after seconds (0 to disable)",
+    "value": 0,
+    "group": "Message settings"
+  },
+  "hideBadges": {
+    "type": "dropdown",
+    "label": "Hide Badges",
+    "value": "inline",
+    "options": {
+      "inline": "Show",
+      "none": "Hide"
+    },
+    "group": "General Settings"
+  },
+  "hideCommands": {
+    "label": "Hide lines starting with ! (!command)",
+    "type": "dropdown",
+    "value": "yes",
+    "options": {
+      "yes": "Yes",
+      "no": "No"
+    },
+    "group": "General Settings"
+  },
+  "hiddenUsers": {
+    "label": "Hidden users (comma separated)",
+    "type": "text",
+    "value": "StreamElements,OtherBot",
+    "group": "General Settings"
+  },
+  "emoteSize": {
+    "type": "number",
+    "label": "Emote size",
+    "value": 24,
+    "group": "General Settings"
+  },
+  "widgetName": {
+    "label": "Name",
+    "type": "hidden",
+    "value": "Customizable Chat",
+    "group": "About"
+  },
+  "widgetAuthor": {
+    "label": "Author",
+    "type": "text",
+    "value": "Jay_Ende",
+    "group": "About"
+  },
+  "widgetVersion": {
+    "label": "Version",
+    "type": "text",
+    "value": "0.1",
+    "group": "About"
+  },
+  "widgetUpdateUrl": {
+    "label": "Widget URL",
+    "type": "text",
+    "value": "tba",
+    "group": "About"
+  }
+}
